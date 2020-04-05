@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class='card text-center'>
+  <div class='card-body'>
+    <h1> Welcome to Pollster </h1>
+    <p> This is Django polling application </p>
+    <p> Developed by Gus Schmidt alongside the official <br />
+      <a href="https://docs.djangoproject.com/en/3.0/intro/tutorial01/">
+        Django Documentation
+      </a>
+    </p>
+    <a class='btn btn-dark' href="{% url 'polls:index' %}">
+      View Available Polls
+    </a>
+  </div>
+</div>
+{% endblock %}
